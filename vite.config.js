@@ -8,7 +8,7 @@ export default defineConfig({
     org: "axiul",
     project: "apple-website"
   })],
-
+  base: "/apple-website",
   build: {
     sourcemap: true
   }

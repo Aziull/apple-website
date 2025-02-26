@@ -1,6 +1,6 @@
 {
   "name": "apple-website",
-  "homepage": "https://aziull.github.io/apple-website",
+  "homepage": "https://aziull.github.io/apple-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
